@@ -1,0 +1,91 @@
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+.btnBrend
+  color: #fff
+  font-size: 20px
+  font-weight: 400
+  background-color: #e84807
+  border-radius: 3px
+  // border: 2px solid transparent
+  background-color:
+  &:hover
+    // border: 2px solid #fff
+    background-color: #f3672f
+  &:active
+    background-color: #bf3700
+
+
+.owl-controls
+  position: absolute
+  top: 50%
+  width: 100%
+
+  .owl-prev, .owl-next
+    font-size: 0
+    line-height: 0
+    position: absolute
+    display: block
+    width: 37px
+    height: 37px
+    margin-top: -16px
+    padding: 0
+    cursor: pointer
+    color: transparent
+    border: none
+    outline: none
+    background: transparent
+    background-image: url(/images/sprite-icons.png)
+    background-repeat: no-repeat
+    background-size: 118px auto
+    display: inline-block
+
+.lightControl
+  .owl-controls
+    .owl-prev
+      left: 0
+      background-position: 0 -204px
+      &:hover
+        background-position: 0 -90px
+      &:active
+        background-position: 0 -318px
+      &.disabled
+        opacity: .8
+        background-position: 0 -204px
+
+    .owl-next
+      right: 0
+      background-position: 0 -261px
+      &:hover
+        background-position: 0 -147px
+      &.active
+        background-position: 0 -375px
+      &.disabled
+        opacity: .8
+        background-position: 0 -261px
+
+.darkControl
+  .owl-controls
+    .owl-prev
+      left: 30px
+      background-position: 0 -546px
+      &:hover
+        background-position: 0 -432px
+      &:active
+        background-position: 0 -660px
+      &.disabled
+        opacity: .8
+        background-position: 0 -546px
+
+    .owl-next
+      right: 30px
+      background-position: 0 -603px
+      &:hover
+        background-position: 0 -489px
+      &.active
+        background-position: 0 -717px
+      &.disabled
+        opacity: .8
+        background-position: 0 -603px
+

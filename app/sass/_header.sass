@@ -1,0 +1,83 @@
+.header
+
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+
+// Navabar
+
+nav
+  background-color: #fff
+  height: 100px
+  color: $defaultColor
+  .brand-logo
+
+  .button-collapse
+    color: #000
+  ul
+    &.desctopMenu
+      display: flex
+      align-items: center
+    &:first-of-type
+      margin-left: 50px
+  li
+    border: 2px solid transparent
+    a
+      color: $defaultColor
+      font-size: 13px
+      font-weight: 500
+      line-height: 32px
+      padding: 0 10px
+      transition: all .3s
+    &:hover
+      a
+        color: #f3672f
+    &:not(:active)
+      border: 2px solid transparent
+      transition: ease-out .3s
+    &:active
+      border: 2px solid #e84807
+      transition: ease-in .3s
+      a
+        color: #383838
+
+
+
+
+  .infoContact
+    width: 192px
+    display: none
+    flex-direction: column
+    margin-left: 50px
+    .phones
+      display: flex
+      align-items: center
+      span
+        display: block
+        font-size: 20px
+        line-height: 27px
+      .phone
+
+    .email
+      @extend .phones
+      a
+        padding: 0
+
+
+.nav-wrapper
+  display: flex
+  align-items: center
+
+@media only screen and (min-width: 981px)
+  nav
+    .brand-logo
+      position: relative
+    li
+      a
+        &:hover
+          background-color: transparent
+
+
+@media only screen and (min-width: 1200px)
+  nav
+    .infoContact
+      display: flex
+

@@ -1,0 +1,71 @@
+.icon-cm
+  background-image: url(/images/sprite-icons.png)
+  background-repeat: no-repeat
+  background-size: 118px auto
+  display: table
+  &:before
+    content: ''
+    width: 21px
+    height: 35px
+    display: inline-block
+
+
+
+.icon-phone
+  background-position: 0 0
+  margin-right: 15px
+  &:before
+    width: 25px
+    height: 25px
+
+.icon-email
+  @extend .icon-phone
+  background-position: 0 -45px
+
+.icon-cold
+  background-position: 0 -774px
+  margin-right: 22px
+  &:before
+    width: 37px
+    height: 37px
+
+.icon-hot
+  @extend .icon-cold
+  background-position: 0 -831px
+  margin-right: 13px
+
+.icon-arrow
+  background-image: url(/images/arrow.png)
+  background-size: 38px auto
+  margin-left: 13px
+  &:before
+    width: 38px
+    height: 64px
+
+.icon-fire-white
+  margin: 0 auto
+  background-position: 0 -888px
+  &:before
+    width: 16px
+    height: 36px
+
+.icon-fire-orange
+  @extend .icon-fire-white
+  background-position: 0 -944px
+
+.icon-cart
+  margin: 0 auto
+  background-position: 0 -995px
+  &:before
+    width: 118px
+    height: 118px
+.icon-certificate
+  @extend .icon-cart
+  background-position: 0 -1133px
+.icon-transport
+  @extend .icon-cart
+  background-position: 0 -1271px
+
+.btn
+  i
+    line-height: 1
