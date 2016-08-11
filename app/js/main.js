@@ -2,9 +2,31 @@
   'use strict';
 
   $(".button-collapse").sideNav();
+  $('.modal-trigger').leanModal({
+    opacity: .8 // Opacity of modal background
+  });
+
+  // $('#modal2').openModal();
 
 
+  $("a#single_image").fancybox();
 
+  $('.btnBrendLight').click(function(e) {
+
+    $('.btnBrendLight').removeClass('active')
+    $(this).addClass('active')
+
+  });
+
+  $('.modal-action').click(function() {
+
+    if ($('#first_name').val() !==""){
+      $('#modal1').closeModal();
+    }
+
+  });
+
+  // modal-action
   var owlBaseSettings = {
     navigation : true, // Show next and prev buttons
     slideSpeed : 300,
@@ -35,3 +57,7 @@
   $("#owl-recept").owlCarousel(owlBaseSettingsCarusel);
 
 })(window);
+
+$(document).ready(function() {
+  $("a.fancybox").fancybox();
+});

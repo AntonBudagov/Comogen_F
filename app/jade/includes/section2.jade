@@ -4,7 +4,7 @@ mixin section2
       h2 Какое коптильное оборудование Вас интересует?
       .sliders.darkControl
         .slideOne
-          a.btn.btnBrend(href="#")
+          a.btn.btnBrendLight.modal-trigger.active(href="#modal2" data-target="modal2")
             i.icon-cm.icon-cold
             span Холодное копчение
           #owl-slideOne
@@ -19,7 +19,7 @@ mixin section2
                   img(src="http://lorempixel.com/500/500/people/1", alt="")
                 .titleImg Cosmogen CSFE-751
         .slideTwo
-          a.btn.btnBrend(href="#")
+          a.btn.btnBrendLight.modal-trigger(href="#modal2" data-target="modal2")
             i.icon-cm.icon-hot
             span Холодное копчение
           #owl-slideTwo
@@ -35,4 +35,59 @@ mixin section2
                 .titleImg Cosmogen CSFE-751
       h3.desc
         | Затрудняетесь с выбором? Оставьте заявку, и мы подберем коптильню вместе с Вами
-      a.btn.btnBrend(href="#") Оставить заявку
+      a.btn.btnBrend.modal-trigger(href="#modal1" data-target="modal1") Оставить заявку
+
+     //- a.btn.btnBrend.waves-effect.waves-light.modal-trigger(href="#modal1" data-target="modal1") Узнать подробнее
+  #modal2.modal.center
+    .modal-content
+      a.modal-close(href='#!')
+        i.icon-cm.icon-close
+      h4 COSMOGEN CSFE-750
+      .description
+        .topContent
+          .leftContent
+            .price
+              span Цена:
+              span 3,400 грн
+            .desc
+              p
+                span.orangeText="Описание: "
+                | Универсальный электростатический коптильный шкаф с ионизационной сушкой для приготовления продуктов питания холодным способом копчения.
+              p
+                span.orangeText="Время копчения: "
+                | в среднем около 7 минут (для сравнения, копчение традиционным способом занимает от 24 до 120 часов).
+            .descParagraph
+              p Ионизационная сушка позволяет сократить вяление продукта в четыре раза от традиционного способа обдувом воздуха.
+              p Благодаря электростатическому режиму в процессе копчения в полуфабрикате уничтожаются бактерии не разрушая при этом белковой структуры. Это позволяет увеличить срок хранения готового продукта без применения вредной для здоровья химии.
+              p Приготовленная продукция в коптильне имеет превосходные органолептические свойства с долгим сроком хранения.
+          .rightContent
+            img(src="/images/upload/p7130013.jpg", alt="")
+        h4.brendTitle Технические характеристики
+        .descTech
+          p
+            span.orangeText Размер коптильни:
+            span=" 750х450х350 мм ВхШхГ"
+          p
+            span.orangeText Вес:
+            span=" 26 кг"
+          div
+            .orangeText Комплектация:
+            p Генератор холодного дыма Cosmogen – 1 шт.
+            p Шестигранный ключ – 1 шт.
+            p Компрессор – 1 шт.
+            p Шланг силиконовый высокотемпературный – 1,5 метра
+            p Тройник для шланга – 1 шт.
+            p Краник регулировки потока воздуха – 1 шт.
+            p Щепа Буковая – 2 дм3
+            p Щепа Ольховая – 2 дм3
+            p Щепа Микс – 2 дм3
+            p Щепа Фруктовая – 2 дм3
+            p Картонная коробка – 1 шт.
+            p Штанга для развешивания продуктов – 1 шт.
+            p Крючки двойные для развешивания продуктов – 5 шт.
+            p Поддон перфорированный для сбора жидкости – 1 шт.
+            p Коптильный шкаф – 1 шт.
+            p Потребление электроэнергии при электростатическом холодном копчении: 30W / час
+            p Затраты щепы для одного режима копчения: 20-40 г
+            p Разовая загрузка полуфабриката для копчения: до 10 кг
+      .btn.btnBrend.modal-action Заказать

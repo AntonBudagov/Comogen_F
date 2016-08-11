@@ -9,13 +9,22 @@
   background-color: #e84807
   border-radius: 3px
   // border: 2px solid transparent
-  background-color:
   &:hover
     // border: 2px solid #fff
-    background-color: #f3672f
+    background-color: #e84807
   &:active
     background-color: #bf3700
 
+.btnBrendLight
+  @extend .btnBrend
+  background-color: transparent
+  border: 2px solid #fff
+  &.active
+    background-color: #bf3700
+    border: 2px solid transparent
+  &:hover
+    border: 2px solid transparent
+    background-color: #e84807
 
 .owl-controls
   position: absolute

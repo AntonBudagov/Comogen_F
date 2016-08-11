@@ -30,14 +30,23 @@ mixin whyus
         h2 Патенты и Сертификаты
       .center.documents
         .document
-          img.wrappImg(src="images/upload/scannedimage-5.jpg", alt="Сертификат 1")
+          a.wrappImg.fancybox(href="/images/upload/scannedimage-5.jpg")
+            img(src="images/upload/scannedimage-5.jpg", alt="Сертификат 1")
         .document
-          img.wrappImg(src="images/upload/scannedimage-5.jpg", alt="Сертификат 1")
+          a.wrappImg.fancybox(href="/images/upload/scannedimage-5.jpg")
+            img(src="images/upload/scannedimage-5.jpg", alt="Сертификат 1")
         .document
-          img.wrappImg(src="images/upload/scannedimage-5.jpg", alt="Сертификат 1")
+          a.wrappImg.fancybox(href="/images/upload/scannedimage-5.jpg")
+            img(src="images/upload/scannedimage-5.jpg", alt="Сертификат 1")
   .howWork
     .wrappContainer
       .brendTitleWhite
         i.icon-cm.icon-fire-white
         h2 Как это работает
-      iframe(src="https://player.vimeo.com/video/177559327" width="640" height="386" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+       .videoItem
+          iframe(width="100%" height="100%" src="https://www.youtube.com/embed/kOkQ4T5WO9E" frameborder="0" allowfullscreen)
+        //- if Template 'showVideo'
+        //-   iframe(width="560" height="315" src="https://www.youtube.com/embed/kOkQ4T5WO9E" frameborder="0" allowfullscreen)
+        //- else
+        //-   .videoItemPoster.spriteAfter(style="background-image: url('{{poster.url}}')")
+

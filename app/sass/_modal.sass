@@ -1,0 +1,113 @@
+.modal
+  overflow: hidden
+  width: 100%
+  height: 100%
+  max-width: 601px
+  max-height: 403px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+  .modal-content
+    padding: 34px 30px 33px 30px
+  h4
+    color: #383838
+    font-size: 25px
+    font-weight: 400
+    margin-bottom: 39px
+  input
+    height: 62px
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+    border-radius: 3px
+    padding-left: 15px
+    background-color: #f6f6f6
+    margin: 0 0 36px 0
+    box-sizing: border-box
+  .btnBrend
+    height: 80px
+  .modal-close
+    position: absolute
+    right: 0
+    top: 0
+
+
+#modal2
+  top: 0!important
+  overflow: auto
+  width: 100%
+  height: 100%
+  max-width: 1139px
+  max-height: 100%
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)
+  .modal-content
+    padding: 20px
+  h4
+    color: #ff6a49
+    font-size: 20px
+    line-height: 32px
+    margin-bottom: 42px
+    margin-top: 7px
+  .topContent
+    text-align: left
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+  .leftContent
+    max-width: 553px
+    width: 100%
+  img
+    border-radius: 3px
+    margin-top: 40px
+  .price
+    span
+      font-size: 25px
+      font-weight: 500
+      &:first-child
+        text-align: center
+        display: inline-block
+        margin-right: 30px
+        width: 92px
+        padding: 5px 0
+        font-weight: 400
+        font-size: 20px
+        border-top: solid 1px #ff6a49
+        border-bottom: solid 1px #ff6a49
+  .desc
+    margin-top: 33px
+    p
+      padding-bottom: 72px
+  .descParagraph
+    p
+      padding-bottom: 22px
+      &:last-child
+        padding-bottom: 0
+  .brendTitle
+    margin-top: 40px
+    margin-bottom: 22px
+    color: #383838
+    border-top: solid 1px #ff6a49
+    border-bottom: solid 1px #ff6a49
+    font-weight: 400
+    font-size: 20px
+    padding: 17px 0 12px
+  .descTech
+    text-align: left
+    .orangeText
+      display: inline-block
+      padding-bottom: 14px
+  .btnBrend
+    margin-top: 42px
+    height: 80px
+    max-width: 921px
+  .modal-close
+    position: absolute
+    right: 0
+    top: 0
+
+@media #{$desktopLarge}
+  #modal2
+    .modal-content
+      padding: 54px 77px 40px 109px
+    .topContent
+      flex-direction: row
+      align-items: flex-start
+    img
+      margin-top: 0
