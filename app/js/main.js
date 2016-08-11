@@ -60,4 +60,18 @@
 
 $(document).ready(function() {
   $("a.fancybox").fancybox();
+   $('.whyus .animated').viewportChecker({
+     classToAdd: 'visible',
+     classToAddForFullView: 'slideInDown',
+   });
+
+  // VK.init({apiId: 5582951, onlyWidgets: true});
+  // VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 10, width: "665", attach: "*"}, );
+
 });
+
+// $(window).scroll(function(){
+//  if ($('.whyus').offset().top < $(window).scrollTop()){
+//     $('.whyus').find('.animated').addClass('slideInDown');
+//  }
+// })
