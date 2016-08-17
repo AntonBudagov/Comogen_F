@@ -1,2 +1,52 @@
 .footer
   height: 100px
+  .infoContact
+    &:active
+      border: 2px solid transparent
+    .email
+      a
+        padding: 0
+        font-size: 14px
+        font-weight: 400
+        text-transform: none
+  nav
+    ul
+      li
+        display: none
+      .infoContact
+        display: flex
+        flex-direction: column
+        margin-left: 50px
+        .phones
+          display: flex
+          align-items: center
+          span
+            display: block
+            font-size: 20px
+            line-height: 27px
+        .email
+          @extend .phones
+          a
+            padding: 0
+
+  .brand-logo
+    position: relative
+    left: inherit
+    transform: inherit
+
+@media #{$desktop}
+  .footer
+    nav
+      ul
+        li
+          display: block
+        .infoContact
+          display: none
+
+@media #{$desktopLarge}
+  .footer
+    nav
+      ul
+        li
+        .infoContact
+          display: flex

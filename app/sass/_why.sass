@@ -1,22 +1,23 @@
 .whyus
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+  height: 100%
+  .row
+    margin-bottom: 0
   .brendTitleOrange
-    margin-top: 33px
+    padding-top: 33px
     margin-bottom: 30px
   .desc
     margin-top: 51px
     margin-bottom: 50px
-  .hidden
-    opacity: 0
-  .visible
-    opacity: 1
-  .animated
-    animation-duration: 2s
 .certificate
   width: 100%
-  background-image: url(/images/upload/rectangle-14.jpg)
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center top
+  .parallax-container
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+    height: 100%
+  // background-image: url(../images/upload/rectangle-14.jpg)
+  // background-size: cover
+  // background-repeat: no-repeat
+  // background-position: center top
   .brendTitleWhite
     padding-top: 27px
     margin-bottom: 50px
@@ -50,7 +51,7 @@
 
 .howWork
   width: 100%
-  background-image: url(/images/upload/rectangle-29-copy.jpg)
+  background-image: url(../images/upload/rectangle-29-copy.jpg)
   background-size: cover
   background-repeat: no-repeat
   background-position: center top
@@ -64,8 +65,14 @@
     max-height: 652px
     width: 100%
     height: 100%
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+    overflow: hidden
+    border-radius: 3px
+    p
+      width: 100%
+      height: 100%
     iframe
-      height: 652px
+      height: 352px
 .ourProduction, .receptionProduct
   .products
     max-width: 1107px
@@ -84,21 +91,17 @@
 
 .ourProduction
   width: 100%
-  background-image: url(/images/upload/back.jpg)
+  background-image: url(../images/upload/back.jpg)
   background-size: cover
   background-repeat: no-repeat
   background-position: center top
   text-align: center
+  height: 620px
   .brendTitleWhite
     padding-top: 30px
-    margin-bottom: 24px
-  .product
-    // width: 351px
-    // width: 100%
+    margin-bottom: 39px
 
   .wrappImg
-    // max-width: 351px
-    // max-height: 340px
     width: 100%
     overflow: hidden
     img
@@ -106,18 +109,19 @@
 
   .titleProduct
     max-width: 350px
-    margin: 39px auto 41px
+    margin: 39px auto
     color: #fff
     border-top: solid 2px #fff
     border-bottom: solid 2px #fff
     font-size: 20px
     font-weight: 500
-    line-height: 32px
     width: 90%
-    padding: 14px 0 13px
+    padding: 14px 0
 
 .receptionProduct
   text-align: center
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+  height: 100%
   .brendTitleOrange
     padding-top: 30px
     margin-bottom: 24px
@@ -145,3 +149,22 @@
     margin: 0 auto 40px
     max-width: 414px
     height: 84px
+
+
+@media #{$desktop}
+  .howWork
+    .brendTitleWhite
+    .videoItem
+      width: 1143px
+      height: 652px
+      iframe
+        height: 100%
+        width: 100%
+
+@media #{$desktopLarge}
+  .certificate
+    .parallax-container
+      height: 650px
+      .parallax
+        img
+          height: 140%

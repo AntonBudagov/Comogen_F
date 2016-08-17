@@ -1,12 +1,13 @@
 (function (appl) {
   'use strict';
 
+  $('.parallax').parallax();
   $(".button-collapse").sideNav();
   $('.modal-trigger').leanModal({
     opacity: .8 // Opacity of modal background
   });
 
-  // $('#modal2').openModal();
+
 
 
   $("a#single_image").fancybox();
@@ -60,10 +61,11 @@
 
 $(document).ready(function() {
   $("a.fancybox").fancybox();
-   $('.whyus .animated').viewportChecker({
-     classToAdd: 'visible',
-     classToAddForFullView: 'slideInDown',
-   });
+   new WOW().init();
+   // $('.whyus .animated').viewportChecker({
+   //   classToAdd: 'visible',
+   //   classToAddForFullView: 'slideInDown',
+   // });
 
   // VK.init({apiId: 5582951, onlyWidgets: true});
   // VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 10, width: "665", attach: "*"}, );

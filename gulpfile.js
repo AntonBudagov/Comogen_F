@@ -10,9 +10,16 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 gulp.task('compress', function (cb) {
+  var options = {
+        compress: false
+    };
   pump([
         gulp.src('app/js/*.js'),
-        uglify(),
+        uglify({
+          mangle: false,
+          compress: true
+         // output: { beautify: true }
+         }),
         gulp.dest('dist/js')
     ],
     cb

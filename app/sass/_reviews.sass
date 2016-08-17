@@ -1,10 +1,13 @@
 .reviews
   width: 100%
-  background-image: url(/images/upload/backLast.jpg)
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center top
   text-align: center
+  // background-image: url(/images/upload/backLast.jpg)
+  // background-size: cover
+  // background-repeat: no-repeat
+  // background-position: center top
+  .parallax-container
+    height: 100%
+
   .brendTitleWhite
     padding-top: 30px
     margin-bottom: 24px
@@ -16,14 +19,19 @@
   .desc
     text-align: left
     padding: 34px 39px 34px 49px
-    // width: 539px
     height: auto
     background: #fff
     color: #080808
     font-size: 12px
     font-weight: 400
     line-height: 24px
-
+    border-radius: 3px
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+    p
+      color: #080808
+      font-size: 12px
+      font-weight: 400
+      line-height: 24px
   .user
     position: absolute
     bottom: -70px
@@ -43,3 +51,15 @@
     border: solid 5px #fff
     margin-right: 18px
 
+.reviewVkFb
+  display: none
+  width: 100%
+
+  justify-content: space-between
+  .fb-comments
+    background-color: #fff
+
+
+@media #{$desktop}
+  .reviewVkFb
+    display: flex

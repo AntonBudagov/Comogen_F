@@ -1,5 +1,5 @@
 .icon-cm
-  background-image: url(/images/sprite-icons.png)
+  background-image: url(../images/sprite-icons.png)
   background-repeat: no-repeat
   background-size: 118px auto
   display: table
@@ -20,7 +20,7 @@
 
 .icon-email
   @extend .icon-phone
-  background-position: 0 -45px
+  background-position: 0 -44px
 
 .icon-cold
   background-position: 0 -774px
@@ -35,8 +35,7 @@
   margin-right: 13px
 
 .icon-arrow
-  background-image: url(/images/arrow.png)
-  background-size: 38px auto
+  background-position: 0 -1577px
   margin-left: 13px
   &:before
     width: 38px
@@ -70,12 +69,24 @@
   background-position: 0 -1271px
 
 .icon-close
-  background-image: url(/images/close.png)
-  background-size: 64px auto
+  background-position: 0 -1409px
   &:before
     width: 64px
     height: 62px
+.icon-close-orange
+  @extend .icon-close
+  background-position: 0 -1491px
+  &:before
+    width: 31px
+    height: 31px
+
+.iocn-quote
+  background-position: 0 -1542px
+  &:before
+    width: 19px
+    height: 15px
 
 .btn
   i
     line-height: 1
+

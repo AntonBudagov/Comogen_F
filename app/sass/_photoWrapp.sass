@@ -1,18 +1,22 @@
 .photoWrapp
   width: 100%
-  background-image: url(/images/upload/rectangle-4.jpg)
-  background-size: cover
+  background-image: url(../images/upload/rectangle-4.jpg)
+  background-size: auto
   background-repeat: no-repeat
-  background-position: center top
-  height: 660px
-  display: flex
-  text-align: center
-  justify-content: center
-  align-items: center
+  background-position: center
+  height: 650px
+  // display: flex
+  // text-align: center
+  // justify-content: center
+  // align-items: center
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
   .wrappContainer, .description
     display: flex
     flex-direction: column
     align-items: flex-end
+  .wrappContainer
+    height: 100%
+    justify-content: center
   h1
     color: #fff
     text-align: right
@@ -21,9 +25,29 @@
       display: block
       font-weight: 400
       font-size: 30px
+      text-transform: none
   .btnBrend
     margin-top: 37px
     width: 100%
     max-width: 321px
     height: 86px
+
+  .icon-arrow
+    display: none
+
+@media #{$desktop}
+  .photoWrapp
+    background-size: cover
+    .wrappContainer
+      display: block
+    .description
+      display: block
+      padding-top: 200px
+      float: right
+      margin-right: 40px
+      .btnBrend
+        float: right
+        margin-right: 50px
+    .icon-arrow
+      display: table
 

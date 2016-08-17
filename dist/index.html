@@ -7,11 +7,10 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <meta content="#fff" name="msapplication-TileColor">
     <meta content="#fff" name="theme-color">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="lib/animate.min.css">
+    <link rel="stylesheet" href="lib/jquery/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.min.css">
     <link href="css/main.css" rel="stylesheet">
     <title>Page Index</title>
   </head>
@@ -22,6 +21,7 @@
           <ul class="right hide-on-med-and-down desctopMenu">
             <li class="currentLink"><a href="#">ГЛАВНАЯ</a></li>
             <li><a href="#">ПОЧЕМУ МЫ?</a></li>
+            <li><a href="#">Патенты</a></li>
             <li><a href="#">КАК ЭТО РАБОТАЕТ</a></li>
             <li><a href="#">НАША ПРОДУКЦИЯ</a></li>
             <li><a href="#">РЕЦЕПТЫ</a></li>
@@ -39,6 +39,7 @@
           <ul id="mobile-demo" class="side-nav">
             <li><a href="#">ГЛАВНАЯ</a></li>
             <li><a href="#">ПОЧЕМУ МЫ?</a></li>
+            <li><a href="#">Патенты</a></li>
             <li><a href="#">КАК ЭТО РАБОТАЕТ</a></li>
             <li><a href="#">НАША ПРОДУКЦИЯ</a></li>
             <li><a href="#">РЕЦЕПТЫ</a></li>
@@ -66,47 +67,50 @@
       </div>
     </div>
     <div class="twoSliders">
-      <div class="wrappContainer">
-        <h2>Какое коптильное оборудование Вас интересует?</h2>
-        <div class="sliders darkControl">
-          <div class="slideOne"><a href="#modal2" data-target="modal2" class="btn btnBrendLight modal-trigger active"><i class="icon-cm icon-cold"></i><span>Холодное копчение</span></a>
-            <div id="owl-slideOne">
-              <div class="slideContent">
-                <div class="imgContent">
-                  <div class="wrappImg"><img src="/images/upload/dscn2769.jpg" alt=""/></div>
-                  <div class="titleImg">Cosmogen CSFE-750</div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="/images/upload/back-image.jpg"/></div>
+        <div class="wrappContainer">
+          <h2>Какое коптильное оборудование Вас интересует?</h2>
+          <div class="sliders darkControl">
+            <div class="slideOne"><a href="#modal2" data-target="modal2" class="btn btnBrendLight modal-trigger active"><i class="icon-cm icon-cold"></i><span>Холодное копчение</span></a>
+              <div id="owl-slideOne">
+                <div class="slideContent">
+                  <div class="imgContent">
+                    <div class="wrappImg"><img src="/images/upload/dscn2769.jpg" alt=""/></div>
+                    <div class="titleImg">Cosmogen CSFE-750</div>
+                  </div>
+                </div>
+                <div class="slideContent">
+                  <div class="imgContent">
+                    <div class="wrappImg"><img src="/images/upload/dscn2942.jpg" alt=""/></div>
+                    <div class="titleImg">Cosmogen CSFE-751</div>
+                  </div>
                 </div>
               </div>
-              <div class="slideContent">
-                <div class="imgContent">
-                  <div class="wrappImg"><img src="/images/upload/dscn2942.jpg" alt=""/></div>
-                  <div class="titleImg">Cosmogen CSFE-751</div>
+            </div>
+            <div class="slideTwo"><a href="#modal2" data-target="modal2" class="btn btnBrendLight modal-trigger"><i class="icon-cm icon-hot"></i><span>Холодное и горячее копчение</span></a>
+              <div id="owl-slideTwo">
+                <div class="slideContent">
+                  <div class="imgContent">
+                    <div class="wrappImg"><img src="/images/upload/dscn2942.jpg" alt=""/></div>
+                    <div class="titleImg">Cosmogen CSFE-750</div>
+                  </div>
+                </div>
+                <div class="slideContent">
+                  <div class="imgContent">
+                    <div class="wrappImg"><img src="/images/upload/dscn2769.jpg" alt=""/></div>
+                    <div class="titleImg">Cosmogen CSFE-751</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slideTwo"><a href="#modal2" data-target="modal2" class="btn btnBrendLight modal-trigger"><i class="icon-cm icon-hot"></i><span>Холодное копчение</span></a>
-            <div id="owl-slideTwo">
-              <div class="slideContent">
-                <div class="imgContent">
-                  <div class="wrappImg"><img src="/images/upload/dscn2942.jpg" alt=""/></div>
-                  <div class="titleImg">Cosmogen CSFE-750</div>
-                </div>
-              </div>
-              <div class="slideContent">
-                <div class="imgContent">
-                  <div class="wrappImg"><img src="/images/upload/dscn2769.jpg" alt=""/></div>
-                  <div class="titleImg">Cosmogen CSFE-751</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h3 class="desc">Затрудняетесь с выбором? Оставьте заявку, и мы подберем коптильню вместе с Вами</h3><a href="#modal1" data-target="modal1" class="btn btnBrend modal-trigger">Оставить заявку</a>
         </div>
-        <h3 class="desc">Затрудняетесь с выбором? Оставьте заявку, и мы подберем коптильню вместе с Вами</h3><a href="#modal1" data-target="modal1" class="btn btnBrend modal-trigger">Оставить заявку</a>
       </div>
     </div>
-    <div id="modal2" class="modal center">
-      <div class="modal-content"><a href="#!" class="modal-close"><i class="icon-cm icon-close"></i></a>
+    <div id="modal2" class="modal center modal-large">
+      <div class="modal-content"><a href="#!" class="modal-close"><i class="icon-cm icon-close-orange"></i></a>
         <h4>COSMOGEN CSFE-750</h4>
         <div class="description">
           <div class="topContent">
@@ -160,22 +164,22 @@
           <h2>Почему мы?</h2>
         </div>
         <div class="row center">
-          <div class="col l4"><i class="icon-cm icon-certificate animated hidden"></i>
-            <p class="desc">
+          <div class="col l4"><i data-wow-offset="0" data-wow-delay="0s" data-wow-duration="2s" class="icon-cm icon-certificate animated fadeInDown wow"></i>
+            <p data-wow-offset="200" data-wow-delay="1s" data-wow-duration="2s" class="desc animated fadeInDown wow">
               Наши разработки уникальны и имеют зарегистрированный патент. Мы используем электростатические
               технологии, которые позволяют сократить время копчения более чем в 6 раз, сохранив при
               этом все качества присущие традиционному способу копчения
             </p>
           </div>
-          <div class="col l4"><i class="icon-cm icon-transport animated hidden"></i>
-            <p class="desc">
+          <div class="col l4"><i data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s" class="icon-cm icon-transport animated fadeInDown wow"></i>
+            <p data-wow-offset="200" data-wow-delay="1s" data-wow-duration="2s" class="desc animated fadeInDown wow">
               Наши разработки уникальны и имеют зарегистрированный патент. Мы используем электростатические
               технологии, которые позволяют сократить время копчения более чем в 6 раз, сохранив при
               этом все качества присущие традиционному способу копчения
             </p>
           </div>
-          <div class="col l4"><i class="icon-cm icon-cart animated hidden"></i>
-            <p class="desc">
+          <div class="col l4"><i data-wow-offset="300" data-wow-delay="1s" data-wow-duration="2s" class="icon-cm icon-cart animated animated fadeInDown wow"></i>
+            <p data-wow-offset="200" data-wow-delay="1s" data-wow-duration="2s" class="desc animated fadeInDown wow">
               Наши разработки уникальны и имеют зарегистрированный патент. Мы используем электростатические
               технологии, которые позволяют сократить время копчения более чем в 6 раз, сохранив при
               этом все качества присущие традиционному способу копчения
@@ -185,14 +189,17 @@
       </div>
     </div>
     <div class="certificate">
-      <div class="wrappContainer">
-        <div class="brendTitleWhite"><i class="icon-cm icon-fire-orange"></i>
-          <h2>Патенты и Сертификаты</h2>
-        </div>
-        <div class="center documents">
-          <div class="document"><a href="/images/upload/scannedimage-5.jpg" class="wrappImg fancybox"><img src="images/upload/scannedimage-5.jpg" alt="Сертификат 1"/></a></div>
-          <div class="document"><a href="/images/upload/scannedimage-5.jpg" class="wrappImg fancybox"><img src="images/upload/scannedimage-5.jpg" alt="Сертификат 1"/></a></div>
-          <div class="document"><a href="/images/upload/scannedimage-5.jpg" class="wrappImg fancybox"><img src="images/upload/scannedimage-5.jpg" alt="Сертификат 1"/></a></div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="/images/upload/rectangle-14.jpg"/></div>
+        <div class="wrappContainer">
+          <div class="brendTitleWhite"><i class="icon-cm icon-fire-orange"></i>
+            <h2>Патенты и Сертификаты</h2>
+          </div>
+          <div class="center documents">
+            <div class="document"><a href="/images/upload/scannedimage-5.jpg" class="wrappImg fancybox"><img src="images/upload/scannedimage-5.jpg" alt="Сертификат 1"/></a></div>
+            <div class="document"><a href="/images/upload/scannedimage-5.jpg" class="wrappImg fancybox"><img src="images/upload/scannedimage-5.jpg" alt="Сертификат 1"/></a></div>
+            <div class="document"><a href="/images/upload/scannedimage-5.jpg" class="wrappImg fancybox"><img src="images/upload/scannedimage-5.jpg" alt="Сертификат 1"/></a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -202,7 +209,6 @@
           <h2>Как это работает</h2>
         </div>
         <div class="videoItem">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kOkQ4T5WO9E" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
       </div>
     </div>
@@ -210,7 +216,7 @@
       <div class="brendTitleWhite"><i class="icon-cm icon-fire-orange"></i>
         <h2>Наша продукция</h2>
       </div>
-      <div class="products lightControl">
+      <div class="products darkControl">
         <div id="owl-product">
           <div class="product">
             <div class="wrappImg"><img src="/images/upload/dscn1453-copy.jpg" alt=""/></div>
@@ -270,42 +276,47 @@
       </div>
     </div>
     <div class="reviews">
-      <div class="wrappContainer">
-        <div class="brendTitleWhite"><i class="icon-cm icon-fire-orange"></i>
-          <h2>Отзывы наших клиентов</h2>
-        </div>
-        <div class="reviewVkFb">
-          <div class="col l6 reviewContent">
-            <div id="vk_comments"></div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="/images/upload/backLast.jpg"/></div>
+        <div class="wrappContainer">
+          <div class="brendTitleWhite"><i class="icon-cm icon-fire-orange"></i>
+            <h2>Отзывы наших клиентов</h2>
           </div>
-          <div class="col l6 reviewContent"></div>
-        </div>
-        <div class="reviewOther row center">
-          <div class="col l6 reviewContent">
-            <div class="desc">
-              В електриці я не дуже. Але чомусь мене зацікавило копчення
-              завдяки електростатиці. Почав вивчати і побачив продукцію НВО COSMOGEN. Спочатку віднісся дуже скептично – за 15 хв. закоптити продукт та ще й
-              холодним чином – не вірилось. Придивлявся, прицінювався. І тут бачу оголошення -продам COSMOGEN CSFE-750 бу. Подумав варто спробувати. Зробив заміри на балконі, де планував поставити коптильню – ідеально. Купив в одному з ресторанів Києва. Мені повідомили, що коптильня в ідеальному стані, все працює – включай і працюй - нам не потрібно, у нас змінився повар і меню, копчення вже не цікавить
-              і тп. Чекати не став. Привіз, поставив на балконі – вписалась в інтер’єр. Замаринував скумбрію, підвісив в коптильні – не працює. Не працювала електростатика. Я спробував закоптити звичайним холодним копченням – тобто працює тільки компресор. За 6 годин все вийшло.
+          <div class="reviewVkFb row">
+            <div class="col l6 reviewContent">
+              <div id="vk_comments"></div>
             </div>
-            <div class="user">
-              <div class="userWrapp">
-                <div class="avatar"><img src="/images/upload/avatar.jpg" alt="Tor"/></div>
-                <div class="name"><strong>Виктор</strong><span> 11.07.2016, 17:33</span></div>
+            <div class="col l6 reviewContent">
+              <div data-href="http://test.aurum.pp.ua/" data-numposts="5" class="fb-comments"></div>
+            </div>
+          </div>
+          <div class="reviewOther row center">
+            <div class="col l6 reviewContent">
+              <div class="desc">
+                В електриці я не дуже. Але чомусь мене зацікавило копчення
+                завдяки електростатиці. Почав вивчати і побачив продукцію НВО COSMOGEN. Спочатку віднісся дуже скептично – за 15 хв. закоптити продукт та ще й
+                холодним чином – не вірилось. Придивлявся, прицінювався. І тут бачу оголошення -продам COSMOGEN CSFE-750 бу. Подумав варто спробувати. Зробив заміри на балконі, де планував поставити коптильню – ідеально. Купив в одному з ресторанів Києва. Мені повідомили, що коптильня в ідеальному стані, все працює – включай і працюй - нам не потрібно, у нас змінився повар і меню, копчення вже не цікавить
+                і тп. Чекати не став. Привіз, поставив на балконі – вписалась в інтер’єр. Замаринував скумбрію, підвісив в коптильні – не працює. Не працювала електростатика. Я спробував закоптити звичайним холодним копченням – тобто працює тільки компресор. За 6 годин все вийшло.
+              </div>
+              <div class="user">
+                <div class="userWrapp">
+                  <div class="avatar"><img src="/images/upload/avatar.jpg" alt="Tor"/></div>
+                  <div class="name"><strong>Виктор</strong><span> 11.07.2016, 17:33</span></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col l6 reviewContent">
-            <div class="desc">
-              В електриці я не дуже. Але чомусь мене зацікавило копчення
-              завдяки електростатиці. Почав вивчати і побачив продукцію НВО COSMOGEN. Спочатку віднісся дуже скептично – за 15 хв. закоптити продукт та ще й
-              холодним чином – не вірилось. Придивлявся, прицінювався. І тут бачу оголошення -продам COSMOGEN CSFE-750 бу. Подумав варто спробувати. Зробив заміри на балконі, де планував поставити коптильню – ідеально. Купив в одному з ресторанів Києва. Мені повідомили, що коптильня в ідеальному стані, все працює – включай і працюй - нам не потрібно, у нас змінився повар і меню, копчення вже не цікавить
-              і тп. Чекати не став. Привіз, поставив на балконі – вписалась в інтер’єр. Замаринував скумбрію, підвісив в коптильні – не працює. Не працювала електростатика. Я спробував закоптити звичайним холодним копченням – тобто працює тільки компресор. За 6 годин все вийшло.
-            </div>
-            <div class="user">
-              <div class="userWrapp">
-                <div class="avatar"><img src="/images/upload/avatar.jpg" alt="Tor"/></div>
-                <div class="name"><strong>Виктор</strong><span> 11.07.2016, 17:33</span></div>
+            <div class="col l6 reviewContent">
+              <div class="desc">
+                В електриці я не дуже. Але чомусь мене зацікавило копчення
+                завдяки електростатиці. Почав вивчати і побачив продукцію НВО COSMOGEN. Спочатку віднісся дуже скептично – за 15 хв. закоптити продукт та ще й
+                холодним чином – не вірилось. Придивлявся, прицінювався. І тут бачу оголошення -продам COSMOGEN CSFE-750 бу. Подумав варто спробувати. Зробив заміри на балконі, де планував поставити коптильню – ідеально. Купив в одному з ресторанів Києва. Мені повідомили, що коптильня в ідеальному стані, все працює – включай і працюй - нам не потрібно, у нас змінився повар і меню, копчення вже не цікавить
+                і тп. Чекати не став. Привіз, поставив на балконі – вписалась в інтер’єр. Замаринував скумбрію, підвісив в коптильні – не працює. Не працювала електростатика. Я спробував закоптити звичайним холодним копченням – тобто працює тільки компресор. За 6 годин все вийшло.
+              </div>
+              <div class="user">
+                <div class="userWrapp">
+                  <div class="avatar"><img src="/images/upload/avatar.jpg" alt="Tor"/></div>
+                  <div class="name"><strong>Виктор</strong><span> 11.07.2016, 17:33</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -315,21 +326,47 @@
     <footer class="footer">
       <nav>
         <div class="nav-wrapper container"><a href="#!" class="brand-logo"><img src="/images/logo.png" alt="cosmogen"/></a>
+          <ul class="right desctopMenu">
+            <li class="currentLink"><a href="#">ГЛАВНАЯ</a></li>
+            <li><a href="#">ПОЧЕМУ МЫ?</a></li>
+            <li><a href="#">КАК ЭТО РАБОТАЕТ</a></li>
+            <li><a href="#">НАША ПРОДУКЦИЯ</a></li>
+            <li><a href="#">РЕЦЕПТЫ</a></li>
+            <li><a href="#">ОТЗЫВЫ</a></li>
+            <li class="infoContact">
+              <div class="phones">
+                <div class="icon-cm icon-phone"></div>
+                <div class="phone"><span>(050)195-57-09</span><span>(063)410-64-10</span></div>
+              </div>
+              <div class="email">
+                <div class="icon-cm icon-email"></div><a href="#">info@cosmogen.com.ua</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
     </footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js"></script>
-    <script type="text/javascript" src="//vk.com/js/api/openapi.js?126"></script>
-    <script type="text/javascript">VK.init({apiId: 5582951, onlyWidgets: true});</script>
-    <script type="text/javascript">
-      VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 10, width: "665", attach: "*"});
-      
-      
-    </script>
-    <script src="js/main.js"></script>
   </body>
+  <script type="text/javascript" src="lib/jquery/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="lib/jquery/fancybox/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="lib/wow.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?126"></script>
+  <script type="text/javascript">VK.init({apiId: 5582951, onlyWidgets: true});</script>
+  <script type="text/javascript">
+    VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 5, width: "auto", attach: "*"});
+    
+  </script>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </html>

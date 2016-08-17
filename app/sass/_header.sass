@@ -1,15 +1,37 @@
 .header
-
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
-
-// Navabar
-
+  position: relative
+  .infoContact
+    display: none
+    flex-direction: column
+    margin-left: 50px
+    &:active
+      border: 2px solid transparent
+    .phones
+      display: flex
+      align-items: center
+      span
+        display: block
+        font-size: 20px
+        line-height: 27px
+        font-weight: 400
+    .email
+      a
+        padding: 0
+        font-size: 14px
+        font-weight: 400
+        text-transform: none
+      @extend .phones
+  .brand-logo
+    display: table
 nav
   background-color: #fff
   height: 100px
   color: $defaultColor
-  .brand-logo
-
+  .nav-wrapper
+    display: flex
+    align-items: center
+    max-width: 1134px
   .button-collapse
     color: #000
   ul
@@ -27,6 +49,8 @@ nav
       line-height: 32px
       padding: 0 10px
       transition: all .3s
+      text-transform: uppercase
+      white-space: nowrap
     &:hover
       a
         color: #f3672f
@@ -39,45 +63,16 @@ nav
       a
         color: #383838
 
-
-
-
-  .infoContact
-    // width: 192px
-    display: none
-    flex-direction: column
-    margin-left: 50px
-    .phones
-      display: flex
-      align-items: center
-      span
-        display: block
-        font-size: 20px
-        line-height: 27px
-      .phone
-
-    .email
-      @extend .phones
-      a
-        padding: 0
-
-
-.nav-wrapper
-  display: flex
-  align-items: center
-
-@media only screen and (min-width: 981px)
+@media #{$desktop}
   nav
-    .brand-logo
-      position: relative
     li
       a
         &:hover
           background-color: transparent
+    .brand-logo
+      position: relative
 
-
-@media only screen and (min-width: 1200px)
-  nav
+@media #{$desktopLarge}
+  .header
     .infoContact
       display: flex
-

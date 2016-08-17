@@ -1,47 +1,49 @@
 mixin section2
   .twoSliders
-    .wrappContainer
-      h2 Какое коптильное оборудование Вас интересует?
-      .sliders.darkControl
-        .slideOne
-          a.btn.btnBrendLight.modal-trigger.active(href="#modal2" data-target="modal2")
-            i.icon-cm.icon-cold
-            span Холодное копчение
-          #owl-slideOne
-            .slideContent
-              .imgContent
-                .wrappImg
-                  img(src="/images/upload/dscn2769.jpg", alt="")
-                .titleImg Cosmogen CSFE-750
-            .slideContent
-              .imgContent
-                .wrappImg
-                  img(src="/images/upload/dscn2942.jpg", alt="")
-                .titleImg Cosmogen CSFE-751
-        .slideTwo
-          a.btn.btnBrendLight.modal-trigger(href="#modal2" data-target="modal2")
-            i.icon-cm.icon-hot
-            span Холодное копчение
-          #owl-slideTwo
-            .slideContent
-              .imgContent
-                .wrappImg
-                  img(src="/images/upload/dscn2942.jpg", alt="")
-                .titleImg Cosmogen CSFE-750
-            .slideContent
-              .imgContent
-                .wrappImg
-                  img(src="/images/upload/dscn2769.jpg", alt="")
-                .titleImg Cosmogen CSFE-751
-      h3.desc
-        | Затрудняетесь с выбором? Оставьте заявку, и мы подберем коптильню вместе с Вами
-      a.btn.btnBrend.modal-trigger(href="#modal1" data-target="modal1") Оставить заявку
+    .parallax-container
+      .parallax
+        img(src='/images/upload/back-image.jpg')
+      .wrappContainer
+        h2 Какое коптильное оборудование Вас интересует?
+        .sliders.darkControl
+          .slideOne
+            a.btn.btnBrendLight.modal-trigger.active(href="#modal2" data-target="modal2")
+              i.icon-cm.icon-cold
+              span Холодное копчение
+            #owl-slideOne
+              .slideContent
+                .imgContent
+                  .wrappImg
+                    img(src="/images/upload/dscn2769.jpg", alt="")
+                  .titleImg Cosmogen CSFE-750
+              .slideContent
+                .imgContent
+                  .wrappImg
+                    img(src="/images/upload/dscn2942.jpg", alt="")
+                  .titleImg Cosmogen CSFE-751
+          .slideTwo
+            a.btn.btnBrendLight.modal-trigger(href="#modal2" data-target="modal2")
+              i.icon-cm.icon-hot
+              span Холодное и горячее копчение
+            #owl-slideTwo
+              .slideContent
+                .imgContent
+                  .wrappImg
+                    img(src="/images/upload/dscn2942.jpg", alt="")
+                  .titleImg Cosmogen CSFE-750
+              .slideContent
+                .imgContent
+                  .wrappImg
+                    img(src="/images/upload/dscn2769.jpg", alt="")
+                  .titleImg Cosmogen CSFE-751
+        h3.desc
+          | Затрудняетесь с выбором? Оставьте заявку, и мы подберем коптильню вместе с Вами
+        a.btn.btnBrend.modal-trigger(href="#modal1" data-target="modal1") Оставить заявку
 
-     //- a.btn.btnBrend.waves-effect.waves-light.modal-trigger(href="#modal1" data-target="modal1") Узнать подробнее
-  #modal2.modal.center
+  #modal2.modal.center.modal-large
     .modal-content
       a.modal-close(href='#!')
-        i.icon-cm.icon-close
+        i.icon-cm.icon-close-orange
       h4 COSMOGEN CSFE-750
       .description
         .topContent
