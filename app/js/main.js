@@ -1,16 +1,26 @@
 (function (appl) {
   'use strict';
 
+  // INIT=====================================//
+  $("a.fancybox").fancybox();
+  new WOW().init();
+
   $('.parallax').parallax();
   $(".button-collapse").sideNav();
   $('.modal-trigger').leanModal({
     opacity: .8 // Opacity of modal background
   });
+  // INIT=====================================//
+  // nav-------
+  //  $('li').click(function(e) {
+  //   if($(this).hasClass('infoContact')){
+  //   }else{
+  //     $('li').removeClass('currentLink');
+  //     $(this).addClass('currentLink');
+  //   }
 
 
-
-
-  $("a#single_image").fancybox();
+  // });
 
   $('.btnBrendLight').click(function(e) {
 
@@ -57,23 +67,16 @@
   $("#owl-product").owlCarousel(owlBaseSettingsCarusel);
   $("#owl-recept").owlCarousel(owlBaseSettingsCarusel);
 
+  $(".scrollto").click(function(){
+    var elementClick = $(this).attr("href")
+    if(!$(this).parent().hasClass('infoContact')){
+      $('li').removeClass('currentLink');
+      $(this).parent().addClass('currentLink');
+      var destination = $(elementClick).offset().top;
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+      return false;
+    }
+  });
+
 })(window);
 
-$(document).ready(function() {
-  $("a.fancybox").fancybox();
-   new WOW().init();
-   // $('.whyus .animated').viewportChecker({
-   //   classToAdd: 'visible',
-   //   classToAddForFullView: 'slideInDown',
-   // });
-
-  // VK.init({apiId: 5582951, onlyWidgets: true});
-  // VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 10, width: "665", attach: "*"}, );
-
-});
-
-// $(window).scroll(function(){
-//  if ($('.whyus').offset().top < $(window).scrollTop()){
-//     $('.whyus').find('.animated').addClass('slideInDown');
-//  }
-// })

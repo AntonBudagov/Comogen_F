@@ -1,5 +1,5 @@
 mixin header
-  header.header
+  header.header#home
     nav
       .nav-wrapper.container
         a.brand-logo(href='#!')
@@ -8,19 +8,19 @@ mixin header
           i.material-icons menu
         ul.right.hide-on-med-and-down.desctopMenu
           li.currentLink
-            a(href='#') ГЛАВНАЯ
+            a.scrollto(href='#home') ГЛАВНАЯ
           li
-            a(href='#') ПОЧЕМУ МЫ?
+            a.scrollto(href='#whyus') ПОЧЕМУ МЫ?
           li
-            a(href='#') Патенты
+            a.scrollto(href='#certificate') Патенты
           li
-            a(href='#') КАК ЭТО РАБОТАЕТ
+            a.scrollto(href='#howWork') КАК ЭТО РАБОТАЕТ
           li
-            a(href='#') НАША ПРОДУКЦИЯ
+            a.scrollto(href='#ourProductions') НАША ПРОДУКЦИЯ
           li
-            a(href='#') РЕЦЕПТЫ
+            a.scrollto(href='#receptions') РЕЦЕПТЫ
           li
-            a(href='#') ОТЗЫВЫ
+            a.scrollto(href='#reviews') ОТЗЫВЫ
           li.infoContact
             .phones
               .icon-cm.icon-phone
@@ -32,13 +32,13 @@ mixin header
               a(href="#") info@cosmogen.com.ua
         ul#mobile-demo.side-nav
           li
-            a(href='#') ГЛАВНАЯ
+            a.scrollto(href='#home') ГЛАВНАЯ
           li
-            a(href='#') ПОЧЕМУ МЫ?
+            a.scrollto(href='#whyus') ПОЧЕМУ МЫ?
           li
-            a(href='#') Патенты
+            a.scrollto(href='#certificate') Патенты
           li
-            a(href='#') КАК ЭТО РАБОТАЕТ
+            a.scrollto(href='#howWork') КАК ЭТО РАБОТАЕТ
           li
             a(href='#') НАША ПРОДУКЦИЯ
           li

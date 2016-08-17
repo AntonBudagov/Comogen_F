@@ -1,11 +1,13 @@
 .header
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
-  position: relative
+  position: fixed
+  width: 100%
+  z-index: 2
   .infoContact
     display: none
     flex-direction: column
     margin-left: 50px
-    &:active
+    &.active
       border: 2px solid transparent
     .phones
       display: flex
@@ -24,9 +26,10 @@
       @extend .phones
   .brand-logo
     display: table
+    width: 80px
 nav
   background-color: #fff
-  height: 100px
+  height: 56px
   color: $defaultColor
   .nav-wrapper
     display: flex
@@ -57,14 +60,16 @@ nav
     &:not(:active)
       border: 2px solid transparent
       transition: ease-out .3s
-    &:active
+    &.currentLink
       border: 2px solid #e84807
       transition: ease-in .3s
+      background-color: transparent
       a
         color: #383838
 
 @media #{$desktop}
   nav
+    height: 100px
     li
       a
         &:hover
@@ -74,5 +79,6 @@ nav
 
 @media #{$desktopLarge}
   .header
+    position: relative
     .infoContact
       display: flex
