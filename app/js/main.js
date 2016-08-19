@@ -11,16 +11,7 @@
     opacity: .8 // Opacity of modal background
   });
   // INIT=====================================//
-  // nav-------
-  //  $('li').click(function(e) {
-  //   if($(this).hasClass('infoContact')){
-  //   }else{
-  //     $('li').removeClass('currentLink');
-  //     $(this).addClass('currentLink');
-  //   }
 
-
-  // });
 
   $('.btnBrendLight').click(function(e) {
 
@@ -46,6 +37,16 @@
     pagination: false,
     itemsCustom: false
   }
+
+  var owlBaseSettingsVideo = {
+    navigation : true, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem: true,
+    pagination: true,
+    itemsCustom: false
+  }
+
   var owlBaseSettingsCarusel = {
     navigation : true, // Show next and prev buttons
     slideSpeed : 300,
@@ -53,6 +54,7 @@
     singleItem: false,
     pagination: false,
     items : 3,
+    rewindNav: false,
       itemsDesktop : [1100,2],
       itemsDesktopSmall : [979,2],
       itemsTablet: [729,1],
@@ -62,10 +64,13 @@
 
   $("#owl-slideOne").owlCarousel(owlBaseSettings);
   $("#owl-slideTwo").owlCarousel(owlBaseSettings);
+  $("#owl-videosItems").owlCarousel(owlBaseSettingsVideo);
+
 
 
   $("#owl-product").owlCarousel(owlBaseSettingsCarusel);
   $("#owl-recept").owlCarousel(owlBaseSettingsCarusel);
+  $("#owl-recept-popup").owlCarousel(owlBaseSettingsCarusel);
 
   $(".scrollto").click(function(){
     var elementClick = $(this).attr("href")

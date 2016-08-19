@@ -6,20 +6,23 @@ mixin whyus
         h2 Почему мы?
       .row.center
         .col.l4
-          i.icon-cm.icon-certificate.animated.fadeInDown.wow(data-wow-offset="0" data-wow-delay="0s" data-wow-duration="2s")
-          p.desc.animated.fadeInDown.wow(data-wow-offset="200" data-wow-delay="1s" data-wow-duration="2s")
+          div.fadeInDown.wow(data-wow-delay="0.5s")
+            i.icon-cm.icon-certificate
+          p.desc.fadeInUp.wow(data-wow-delay="0.7s")
             | Наши разработки уникальны и имеют зарегистрированный патент. Мы используем электростатические
             | технологии, которые позволяют сократить время копчения более чем в 6 раз, сохранив при
             | этом все качества присущие традиционному способу копчения
         .col.l4
-          i.icon-cm.icon-transport.animated.fadeInDown.wow(data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s")
-          p.desc.animated.fadeInDown.wow(data-wow-offset="200" data-wow-delay="1s" data-wow-duration="2s")
+          div.fadeInDown.wow(data-wow-delay="0.7s")
+            i.icon-cm.icon-transport
+          p.desc.fadeInUp.wow(data-wow-delay="0.8s")
             | Наши разработки уникальны и имеют зарегистрированный патент. Мы используем электростатические
             | технологии, которые позволяют сократить время копчения более чем в 6 раз, сохранив при
             | этом все качества присущие традиционному способу копчения
         .col.l4
-          i.icon-cm.icon-cart.animated.animated.fadeInDown.wow(data-wow-offset="300" data-wow-delay="1s" data-wow-duration="2s")
-          p.desc.animated.fadeInDown.wow(data-wow-offset="200" data-wow-delay="1s" data-wow-duration="2s")
+          div.fadeInDown.wow(data-wow-delay="0.9s")
+            i.icon-cm.icon-cart
+          p.desc.fadeInUp.wow(data-wow-delay="0.9s")
             | Наши разработки уникальны и имеют зарегистрированный патент. Мы используем электростатические
             | технологии, которые позволяют сократить время копчения более чем в 6 раз, сохранив при
             | этом все качества присущие традиционному способу копчения
@@ -46,10 +49,10 @@ mixin whyus
       .brendTitleWhite
         i.icon-cm.icon-fire-white
         h2 Как это работает
-       .videoItem
-          //- iframe(width="100%" height="100%" src="https://www.youtube.com/embed/kOkQ4T5WO9E" frameborder="0" allowfullscreen)
-        //- if Template 'showVideo'
-        //-   iframe(width="560" height="315" src="https://www.youtube.com/embed/kOkQ4T5WO9E" frameborder="0" allowfullscreen)
-        //- else
-        //-   .videoItemPoster.spriteAfter(style="background-image: url('{{poster.url}}')")
-
+      #owl-videosItems.darkControl
+        .videoItem
+          img(src="images/upload/video.jpg", alt="")
+        .videoItem
+          img(src="images/upload/video.jpg", alt="")
+        .videoItem
+          img(src="images/upload/video.jpg", alt="")

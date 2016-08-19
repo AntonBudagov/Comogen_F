@@ -24,10 +24,11 @@
     height: 80px
   .modal-close
     position: absolute
-    right: 0
-    top: 0
+    right: -10px
+    top: -10px
+    transform: scale(.7)
 
-#modal2, .modal-large
+.modal-large
   top: 0!important
   overflow: auto
   width: 100%
@@ -98,11 +99,62 @@
     max-width: 921px
   .modal-close
     position: absolute
-    top: 54px
-    right: 77px
+    top: 28px
+    right: 20px
+    transform: scale(.7)
+
+.modal-recept
+  background: #fff
+  text-align: left
+  h4
+    display: block
+    border-top: solid 1px #ff6a49
+    border-bottom: solid 1px #ff6a49
+    padding: 29px 0 17px
+    text-align: center
+    span
+      display: inline-block
+      width: 615px
+      color: #ff6a49
+      font-size: 20px
+      font-weight: 400
+      line-height: 32px
+  .modal-content
+    h5
+      margin-bottom: 22px
+      margin-top: 20px
+    &:first-child
+      margin-bottom: 32px
+    p
+      padding-bottom: 30px
+      &:nth-of-type(6)
+        padding-bottom: 16px
+      &:nth-of-type(7)
+        padding-bottom: 16px
+    .wrappImg
+      overflow: hidden
+      border-radius: 50%
+    .lightControl
+      margin-top: 48px
+      .owl-controls
+        .owl-prev
+          left: -41px
+        .owl-next
+          right: -41px
+  .modal-close
+    position: absolute
+    top: 29px
+    right: 21px
 
 @media #{$desktopLarge}
-  #modal2
+  .modal
+    .modal-content
+      .modal-close
+        transform: scale(1)
+        right: 0
+        top: 0
+
+  .modal-large
     .modal-content
       padding: 54px 77px 40px 109px
     .topContent
@@ -110,3 +162,12 @@
       align-items: flex-start
     img
       margin-top: 0
+    .modal-close
+      top: 54px
+      right: 77px
+      transform: scale(1)
+
+  .modal-recept
+    .modal-content
+      padding: 28px 84px 53px 57px
+

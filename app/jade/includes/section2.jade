@@ -7,7 +7,7 @@ mixin section2
         h2 Какое коптильное оборудование Вас интересует?
         .sliders.darkControl
           .slideOne
-            a.btn.btnBrendLight.modal-trigger.active(href="#modal2" data-target="modal2")
+            a.btn.btnBrendLight.modal-trigger(href="#modal2" data-target="modal2")
               i.icon-cm.icon-cold
               span Холодное копчение
             #owl-slideOne
@@ -92,4 +92,4 @@ mixin section2
             p Потребление электроэнергии при электростатическом холодном копчении: 30W / час
             p Затраты щепы для одного режима копчения: 20-40 г
             p Разовая загрузка полуфабриката для копчения: до 10 кг
-      .btn.btnBrend.modal-action Заказать
+      .btn.btnBrend.modal-action.modal-trigger(href="#modal1" data-target="modal1") Заказать

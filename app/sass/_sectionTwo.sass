@@ -35,8 +35,8 @@
     flex-wrap: wrap
     margin: 0 auto
     .btnBrendLight
-      justify-content: flex-start
-      padding-left: 100px
+      padding: 0 1rem
+      justify-content: center
       height: 98px
   .slideOne, .slideTwo
     width: 100%
@@ -84,3 +84,19 @@
     font-weight: 500
     width: 90%
     padding: 14px 0 13px
+
+@media #{$desktop}
+  .twoSliders
+    .sliders
+      .btnBrendLight
+        justify-content: flex-start
+        padding-left: 100px
+
+
+@media #{$desktopLarge}
+  .footer
+    nav
+      ul
+        li
+        .infoContact
+          display: flex
